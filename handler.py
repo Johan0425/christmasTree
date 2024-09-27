@@ -11,7 +11,7 @@ def hello(event, context):
     return response
 
 def tree(event, context):
-    floors = 8
+    floors = 20
     if floors <= 2:
         return {"statusCode": 400, "body": json.dumps({"message": "Error: Number of floors must be greater than 2"})}
     
